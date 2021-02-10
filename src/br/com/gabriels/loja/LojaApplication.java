@@ -9,7 +9,7 @@ public class LojaApplication {
     public static void main(String[] args) {
         Orcamento orcamento = new Orcamento(new BigDecimal(100));
 
-        BigDecimal valorDoImposto = CalculadoraDeImpostos.calcula(orcamento, TipoImposto.ICMS);
+        BigDecimal valorDoImposto = CalculadoraDeImpostos.calcula(orcamento, new ICMS());
 
         System.out.println(valorDoImposto);
     }
