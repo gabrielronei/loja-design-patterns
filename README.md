@@ -15,7 +15,7 @@ escolher, voce irá conseguir tocar.
 Link referência: https://refactoring.guru/design-patterns/strategy
 
 
-## Chain of Responsability
+## Chain of Responsibility
 Este padrão tende a passar solicitações ao longo de uma cadeia. Ao receber uma solicitação, cada manipulador decide
 processar a solicitação ou passá-la para o próximo manipulador na cadeia.
 
