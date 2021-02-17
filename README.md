@@ -27,3 +27,15 @@ caso você não consiga ele te passa para um técnico(nivel 4), formando assim e
 <img src="https://refactoring.guru/images/patterns/diagrams/chain-of-responsibility/example-en.png"/>
 
 Link referência: https://refactoring.guru/design-patterns/chain-of-responsibility
+
+
+## Template Method
+Este padrão sugere que você divida um algoritmo em uma série de etapas, transforme essas etapas em métodos e coloque uma série de chamadas para esses métodos dentro de um único método de modelo. As etapas podem ser abstratos ou ter alguma implementação padrão. Para usar o algoritmo, o cliente deve fornecer sua própria subclasse, implementar todas as etapas abstratas e substituir algumas das opcionais, se necessário (mas não o método do modelo em si).
+
+Exemplo: Quando você tem um processo em que os passos a serem executados é o mesmo, porém algum detalhe é diferente. Por exemplo, em algum jogo de RPG, você tem varios tipos de armas e todas possuem uma quantidade de dano ao atacar, porem esse dano é diferente para cada uma dessas armas.
+
+
+<img src="https://refactoring.guru/images/patterns/diagrams/template-method/structure-indexed.png"/>
+
+Link referência: https://refactoring.guru/design-patterns/template-method
+
