@@ -39,3 +39,13 @@ Exemplo: Quando você tem um processo em que os passos a serem executados é o m
 
 Link referência: https://refactoring.guru/design-patterns/template-method
 
+
+## State
+Este padrão para fazer a transição do contexto para outro estado, substitua o objeto de estado ativo por outro objeto que representa esse novo estado. Isso só é possível se todas as classes de estado seguirem a mesma interface e o próprio contexto funcionar com esses objetos por meio dessa interface.
+
+Exemplo: Quando você tem uma catraca simples, que ela possui dois estados, aberto e fechado. Ao colocar o cartão e o pagamento estar aprovado, você passa pro estado ABERTO, após entrar ela volta para o FECHADO.
+
+
+<img src="https://refactoring.guru/images/patterns/diagrams/state/example.png"/>
+
+Link referência: https://refactoring.guru/design-patterns/state
