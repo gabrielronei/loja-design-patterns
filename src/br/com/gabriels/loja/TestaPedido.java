@@ -1,19 +1,17 @@
 package br.com.gabriels.loja;
 
-import br.com.gabriels.loja.orcamento.Orcamento;
-import br.com.gabriels.loja.pedido.Pedido;
+import br.com.gabriels.loja.pedido.*;
 
 import java.math.BigDecimal;
-import java.time.LocalDateTime;
+import java.util.Scanner;
 
 public class TestaPedido {
     public static void main(String[] args) {
-        Orcamento orcamento = new Orcamento(new BigDecimal("600"), 4);
+        Scanner entrada = new Scanner(System.in);
 
-        Pedido pedido = new Pedido("Gabriel Ronei", LocalDateTime.now(), orcamento);
+        GeraPedido pedido = new GeraPedido(entrada.next(), new BigDecimal(entrada.next()), entrada.nextInt());
+        GeraPedidoHandler geraPedidoHandler = new GeraPedidoHandler();
 
-        //SIMULANDO CHAMADAS PARA SALVAR E ENVIAR EMAIL DO PEDIDO
-        System.out.println("SALVAR PEDIDO");
-        System.out.println("ENVIAR EMAIL");
+        geraPedidoHandler.execute(pedido);
     }
 }
