@@ -72,7 +72,9 @@ O Padrão Command tem como definição encapsular uma solicitação como um obje
 Link referência: https://refactoring.guru/design-patterns/command
 
 ## Adapter
-A ideia do adapter, é trazer o controle de nosso codigo atraves de interfaces que comuniquem com o mundo externo, fazendo que nosso codigo dependa de abstrações e não de implementações
+A ideia do adapter, é trazer o controle de nosso codigo atraves de interfaces que comuniquem com o mundo externo, fazendo que nosso codigo dependa de abstrações e não de implementações.
+
+**Exemplo**: Utilizavamos a UrlConnection(padrão do java), ai precisamos trocar para requisições com o HttpClient da Apache, teriamos que pegar em todos os lugares que utilizavam a UrlConnection e alterar, caso estivesse em nosso adapter, ou fosse uma implementação de nossa interface, nossos pontos de mudança seriam reduzidos.
 
 **Foto para exemplificar em outro contexto**:
 
