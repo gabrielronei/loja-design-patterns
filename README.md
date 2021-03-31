@@ -1,6 +1,11 @@
 # Design Patterns
 Estudando alguns padrões de projeto com Java.
 
+Os design patterns possuem 3 categorias distintas:
+- Criacionais (Factory Method, Prototype, Abstract Factory, Builder, Singleton)
+- Estruturais (Adapter, Decorator, Composite, Facade, Proxy, Bridge, Flyweight)
+- Comportamentais (Chain of Responsibility, Command, Iterator, Mediator, Memento, Observer, State, Strategy, Template Method, Visitor)
+
 
 ## Strategy
 Este padrão pode ser utilizado quando há diversos possíveis algoritmos para uma ação (como calcular imposto, por exemplo). 
@@ -65,3 +70,12 @@ O Padrão Command tem como definição encapsular uma solicitação como um obje
 <img src="https://refactoring.guru/images/patterns/diagrams/command/structure.png"/>
 
 Link referência: https://refactoring.guru/design-patterns/command
+
+## Adapter
+A ideia do adapter, é trazer o controle de nosso codigo atraves de interfaces que comuniquem com o mundo externo, fazendo que nosso codigo dependa de abstrações e não de implementações
+
+**Foto para exemplificar em outro contexto**:
+
+<img src="https://refactoring.guru/images/patterns/diagrams/adapter/structure-object-adapter.png?id=33dffbe3aece29416244"/>
+
+Link referência: https://refactoring.guru/design-patterns/adapter
